@@ -1,0 +1,1 @@
+const coverClockDisplay = document.getElementById("cover-clock-display");

@@ -1,0 +1,41 @@
+.bg-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+
+  transition: opacity 2s;
+}
+
+.bg-image.visible {
+  opacity: 1;
+}
+
+#cover-content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to top, color-mix(in srgb, var(--cover-shadow-color), transparent), transparent);
+  display: flex;
+  align-items: center;
+}
+
+#cover-clock-display {
+  width: fit-content;
+  font-size: 5rem;
+  font-family: 'DM Serif Display';
+  color: var(--cover-content-color);
+  margin-left: 4rem;
+  text-shadow: 0 0 1rem var(--cover-shadow-color);
+}

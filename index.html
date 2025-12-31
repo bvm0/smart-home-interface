@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/cover.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <main>
+    <div id="page-container">
+      <section class="page" id="cover-page">
+        <div id="bg-image-container">
+          <img class="bg-image visible" src="resources/background-photos/bg-1.png">
+          <img class="bg-image" src="resources/background-photos/bg-2.png">
+          <img class="bg-image" src="resources/background-photos/bg-3.png">
+          <img class="bg-image" src="resources/background-photos/bg-4.png">
+          <img class="bg-image" src="resources/background-photos/bg-5.png">
+        </div>
+        <div id="cover-content-container">
+          <p id="cover-clock-display"></p>
+        </div>
+      </section>
+      <section class="page" id="pin-page"></section>
+      <section class="page" id="home-page"></section>
+    </div>
+  </main>
+
+  <script src="scripts/defs.js"></script>
+  <script src="scripts/clock.js"></script>
+  <script src="scripts/pages.js"></script>
+  <script src="scripts/cover.js"></script>
+</body>
+</html>
